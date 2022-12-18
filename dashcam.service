@@ -1,0 +1,16 @@
+[Unit]
+Description=dashcam service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=INPUTPATH/
+ExecStart=/bin/bash INPUTPATH/startdashcam.sh
+RuntimeMaxSec=LENGTHs
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
