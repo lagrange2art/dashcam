@@ -20,4 +20,5 @@ systemctl stop dashcam
 
 The service (and with that the dashcam) starts automatically after booting the RPI. There are more exectubales that may be used to start and stop the dashcam directly. Also if the RPI camera is working there should be a red led on the camera module. checkdashcam.sh is used to return the running status. removeold.sh is called on each start to remove old videos (not that the storage will run full with thousands of videos). dashcam.sh includes the final call of the RPI cmara module raspivid.
 
+![My Image](images/DALL·E 2022-12-18 23.43.28 - single board computer with camera attached on the dashboard of a car in the background you the traffic.png)
 
